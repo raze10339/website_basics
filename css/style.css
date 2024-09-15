@@ -1,0 +1,50 @@
+body {
+    background: white;
+    margin: 0;
+}
+
+
+
+h3 {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /* Aligns the direct children on a row left to right */
+    display: flex;
+    /* once you set display: flex. you can align items vertically and horizontally with flexbox properties */
+    /* Align items will align the direct children on the y-axis (top to bottom) */
+    align-items: center;
+    /* push the direct children as far apart as possible.using the space between them (x-axis) */
+    justify-content: space-between 29;
+    background: #1b1a3150;
+    padding: 25px 7% 20px;
+}
+
+header nav {
+    /* Percentage values are always a percentage of the parent's value(width/height) */
+    margin-left: 100px;
+}
+
+header a {
+    color: #fdab0c;
+}
+
+header a:hover, header a.active, p {
+    text-decoration: underline;
+}
+
+
+header nav a {
+    color: #fff;
+
+}
+
+header nav a:not(:last-child) {
+    margin-right: 10px;
+}
