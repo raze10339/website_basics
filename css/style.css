@@ -1,6 +1,9 @@
-
 root {
---green: #28ffba ;   
+    --green: #28ffba;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -8,6 +11,9 @@ body {
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -46,6 +52,7 @@ header {
     background: #191c2fde;
     padding: 25px 7% 20px;
 }
+
 header a {
     color: #fdab0c;
 }
@@ -74,11 +81,23 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 45px 3% 0 10%;
+    background-image: url(../images/razi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 1;
+    
+     
+      
+    
+    
 
 }
-section p {   
-color: #28ffba;
+
+section p {
+    color: #28ffba;
 }
+
 section h1 {
     color: #fff;
     font-size: 48px;
@@ -86,10 +105,11 @@ section h1 {
     margin: 0 0 25px;
     animation: slide-in 2s;
 }
+
 section button {
     background: none;
     border: 2px solid var(--green);
-    padding:0 0 0 10px;
+    padding: 0 0 0 10px;
     color: #fff;
     text-transform: uppercase;
     cursor: pointer;
@@ -97,12 +117,13 @@ section button {
     align-items: center;
     transition: all 4s;
 }
+
 section button i {
-color: #131521de;
-font-size: 1.5rem;
-background: #28ffba;
-padding: 10px 15px;
-margin-left: 15px;
+    color: #131521de;
+    font-size: 1.5rem;
+    background: #28ffba;
+    padding: 10px 15px;
+    margin-left: 15px;
 }
 
 section button:hover {
@@ -113,16 +134,16 @@ section button:hover {
 }
 
 aside {
-  display: flex; 
-  align-items: center;
-  transform: rotate(90deg); 
-  position: relative;
-  left: 70px;
+    display: flex;
+    align-items: center;
+    transform: rotate(90deg);
+    position: relative;
+    left: 70px;
 }
 
 aside p {
-   color: #28ffba;
-   margin-right: 15px;
+    color: #28ffba;
+    margin-right: 15px;
 }
 
 aside i {
@@ -130,3 +151,23 @@ aside i {
     margin-right: 8px;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #555e90de;
+    padding: 30px 7%;
+    color: #bbb;
+}
+
+@media(max-width: 700px) {
+main {
+    background-position: right;
+    background-image: url(../images/razi.jpg);
+}
+}
+@media(max-width: 400px) {
+main {
+    background-position: 90% 100% ;
+
+}
+}
